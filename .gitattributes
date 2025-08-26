@@ -1,0 +1,16 @@
+# Don't include build outputs
+**/target/                  export-ignore
+target/                     export-ignore
+
+# Ignore IDE stuff
+*.iml                       export-ignore
+.idea/                      export-ignore
+*.ipr                       export-ignore
+*.classpath                 export-ignore
+*.project                   export-ignore
+.settings/                  export-ignore
+.vscode/                    export-ignore
+**nbproject/private         export-ignore
+
+# Ignore OS junk (looking at you apple)
+.DS_Store                   export-ignore
