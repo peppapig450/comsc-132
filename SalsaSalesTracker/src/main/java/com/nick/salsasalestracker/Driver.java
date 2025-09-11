@@ -64,7 +64,7 @@ public class Driver {
             salsa.setSold(salsaCount);
         }
 
-        System.out.printf("\n\n%-15s%10s\n", "Salsa", "Sold");
+        System.out.printf("\n%-15s%10s\n", "Salsa", "Sold");
 
         short totalSales = 0;
         Salsa bestSelling = salsas[0];
