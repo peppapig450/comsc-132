@@ -71,6 +71,8 @@ public class Driver {
         for (Salsa salsa : salsas) {
             short currentSales = salsa.getSold();
 
+            // "Sold" ends at column 25 when printed with %10s (S starts at 22).
+            // To align numbers under the 'S' (column 22), use %7d (10 - 3 = 7).
             System.out.printf("%-15s%7d\n", salsa.getName(), currentSales);
 
             totalSales += currentSales;
