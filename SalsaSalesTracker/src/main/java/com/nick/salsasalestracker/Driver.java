@@ -39,13 +39,7 @@ class Salsa {
     }
 
     public short compareTo(Salsa that) {
-        if (this.sold < that.sold) {
-            return -1;
-        } else if (this.sold > that.sold) {
-            return 1;
-        } else {
-            return 0;
-        }
+        return (short) (this.sold < that.sold ? -1 : this.sold > that.sold ? 1 : 0);
     }
 }
 
